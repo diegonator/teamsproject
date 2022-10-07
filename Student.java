@@ -64,6 +64,14 @@ public class Student implements Serializable {
         
         return best;
     }
-    // add and remove courses function
+    public void removeCourse(Course courses){
+        courses.remove();
+    }
+    public void addCourse(Course courses){
+        courses.add();
+    }
+    public String toString(){
+        return "("+name+",\n, grade level:  , "+gl+", \n, GPA:  "+calculateGPA()+")";
+    }
     
 }
